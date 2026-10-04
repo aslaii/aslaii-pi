@@ -1,0 +1,33 @@
+{
+  "name": "@aslaii/pi",
+  "version": "0.1.0",
+  "description": "A lean Pi setup: codemode-first, gated ship flow, and subagents routed across GPT, Claude, and open-weights models.",
+  "license": "MIT",
+  "keywords": [
+    "pi-package"
+  ],
+  "repository": "github:aslaii/pi",
+  "files": [
+    "agents",
+    "prompts",
+    "skills",
+    "APPEND_SYSTEM.md",
+    "setup.sh"
+  ],
+  "scripts": {
+    "check": "node scripts/check.mjs"
+  },
+  "pi": {
+    "skills": [
+      "./skills"
+    ],
+    "prompts": [
+      "./prompts"
+    ],
+    "subagents": {
+      "agents": [
+        "./agents"
+      ]
+    }
+  }
+}
