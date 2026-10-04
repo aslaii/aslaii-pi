@@ -1,12 +1,12 @@
 {
-  "name": "@aslaii/pi",
+  "name": "aslaii-pi",
   "version": "0.1.0",
   "description": "A lean Pi setup: codemode-first, gated ship flow, and subagents routed across GPT, Claude, and open-weights models.",
   "license": "MIT",
   "keywords": [
     "pi-package"
   ],
-  "repository": "github:aslaii/pi",
+  "repository": "github:aslaii/aslaii-pi",
   "files": [
     "agents",
     "prompts",

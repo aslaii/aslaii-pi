@@ -1,4 +1,4 @@
-# pi
+# aslaii-pi
 
 A lean setup for [Pi](https://github.com/earendil-works/pi), the minimal coding agent. It is a Pi package, not a fork: Pi stays upstream and this repo adds a small set of rules, skills, commands, and subagents on top.
 
@@ -28,13 +28,13 @@ Requires Node 22+.
 
 ```bash
 npm install -g @earendil-works/pi-coding-agent
-git clone https://github.com/aslaii/pi.git ~/pi-setup
-~/pi-setup/setup.sh
+git clone https://github.com/aslaii/aslaii-pi.git
+aslaii-pi/setup.sh
 ```
 
 `setup.sh` installs `pi-subagents`, installs this package from your clone, turns on codemode, and links `APPEND_SYSTEM.md` into `~/.pi/agent/`. An existing `APPEND_SYSTEM.md` is moved to `APPEND_SYSTEM.md.bak`. Because the package is installed from a local path, edits in your clone apply on the next Pi start.
 
-If another tool also installs a `pi` binary, point the script at the right one with `PI_BIN=/path/to/pi ./setup.sh`.
+If another tool also installs a `pi` binary, point the script at the right one with `PI_BIN=/path/to/pi ./setup.sh`, and give vanilla Pi its own alias, for example `alias aslaii-pi=/path/to/pi`.
 
 Then start `pi` and run `/login` for each provider you use (ChatGPT, Claude, OpenCode).
 
